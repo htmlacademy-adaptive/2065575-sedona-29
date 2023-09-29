@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body class="page__body">
+    <header class="main__header">
+      <a class="main-header__link" href="#" aria-label="Логотип ведушший н глвную страницу">
+        <svg class="main-header__logo" width="185" height="96">
+          <use xlink:href="img/sprite.svg#logo"></use>
+        </svg>
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle-button" type="button">
+          <span class="main-nav__toggle"></span>
+          <span class="main-nav__toggle-clon"></span>
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-nav__list"> 
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">Фото и видео</a>
+          </li>
+          <li>
+            <a class="main-nav__link" href="#">Форма Отзыва</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">HTML ACADEMY</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-container">
+      <h1 class="visually-hidden">Cтраница сайта Седона Формы.</h1>
+      <section class="main-intro__container">
+        <h2 class="visually-hidden">Форма сайта.</h2>
+        <picture>
+          <img src="img/png/sedona.png" srcset="img/png/sedona@2x.png 2x" width="229" height="39" alt="Седона.">
+        </picture>
+      </section>
+      <section class="form">
+        <h2>Оставьте свой отзыв</h2>
+        <p>Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        <form class="form__wrapper-form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="form__wrapper-form-border">
+            <legend class="form-contacts__title">Представьтесь:</legend>
+            <ul class="form__list">
+              <li>
+                <label class="form__item">
+                  <span class="form__text">ИМЯ:*</span>
+                  <input class="form__text-input" type="text" name="name" placeholder="Пётр" required>
+                </label>
+              </li>
+              <li>
+                <label class="form__item">
+                  <span class="form__text">ФАМИЛИЯ*:</span>
+                  <input class="form__text-input" type="number" name="weight" placeholder="Пустота" required>
+                </label>
+              </li>
+              <li>
+                <label class="form__item">
+                  <span class="form__text">Отчество:</span>
+                  <input class="form__text-input" type="number" name="age" placeholder="Викторович" required>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form-contacts">
+            <legend class="form-contacts__title">Контактная информация:</legend>
+            <ul class="form-contacts__list list">
+              <li class="form-contacts__item">
+                <label class="form-contacts__label">
+                  <span class="form-contacts__text">Контактная информация:</span>
+                  <input class="form-contacts__input form-contacts__images-tel" type="tel" name="phone" placeholder="Введите телефон" maxlength="21" required>
+                </label>
+              </li>
+              <li class="form-contacts__item">
+                <label class="form-contacts__label">
+                  <span class="form-contacts__text">Электронная почта*:</span>
+                  <input class="form-contacts__input form-contacts__images-email" placeholder="Введите e-mail" type="email" name="subscride-email" required>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="radio">
+            <legend class="form-contacts__title">ВАше Общее впечатление:</legend>
+            <ul class="radio__list">
+              <li>
+                <label class="radio__control">
+                  <input class="radio__input visually-hidden" type="radio" name="product-group" value="care-products" checked>
+                  <span class="radio__mark-radio"></span>
+                  <span class="radio__radio-text">Скорее положительное</span>
+                </label>
+              </li>
+              <li>
+                <label class="radio__control">
+                  <input class="radio__input visually-hidden" type="radio" name="product-group" value="care-products">
+                  <span class="radio__mark-radio"></span>
+                  <span class="radio__radio-text">Скорее отрицательное</span>
+                </label>
+              </li>
+              <li>
+                <label class="radio__control">
+                  <input class="radio__input visually-hidden" type="radio" name="product-group" value="care-products">
+                  <span class="radio__mark-radio"></span>
+                  <span class="radio__radio-text">Затрудняюсь ответить</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="checkbox">
+            <legend class="checkbox__title">посещенные достопримечательности:</legend>
+            <ul class="checkbox__list">
+              <li class="checkbox__item">
+                <label class="checkbox__control">
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="сахарозаменитель" checked>
+                  <span class="checkbox__mark"></span>
+                  <span class="checkbox__text">Мост Дьявола</span>
+                </label>
+              </li>
+              <li class="checkbox__item">
+                <label class="checkbox__control">
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="питьевая вода" checked>
+                  <span class="checkbox__mark"></span>
+                  <span class="checkbox__text">Гора-Колокол</span>
+                </label>
+              </li>
+              <li class="checkbox__item">
+                <label class="checkbox__control">
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="молоко" checked>
+                  <span class="checkbox__mark"></span>
+                  <span class="checkbox__text">Слайд-парк</span>
+                </label>
+              </li>
+              <li class="checkbox__item">
+                <label class="checkbox__control">
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="витамины">
+                  <span class="checkbox__mark"></span>
+                  <span class="checkbox__text">Красные скалы</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="form-Comment">
+            <legend class="form-Comment__title">Опишите свои эмоции:</legend>
+              <label>
+                <textarea class="form-Comment__text" name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
+              </label>
+          </fieldset>
+          <div class="form__container-button">
+            <button class="form__button button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
+            <p class="form__container-text">* — Обязательные поля</p>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <p class="main-footer__text">#visitSEDONA</p>
+      <ul class="main-footer__itam">
+        <li class="main-footer__list">
+          <a class="main-footer__link" href="#">
+            <svg width="24" height="24">
+              <use xlink:href="img/sprite.svg#vk-icons"></use>
+            </svg>
+            <span class="visually-hidden">В Контакте.</span>
+          </a>
+        </li>
+        <li class="main-footer__list">
+          <a class="main-footer__link" href="#">
+            <svg width="24" height="24">
+              <use xlink:href="img/sprite.svg#telegram"></use>
+            </svg>
+            <span class="visually-hidden">Телеграмм.</span>
+          </a>
+        </li>
+        <li class="main-footer__list">
+          <a class="main-footer__link" href="#">
+            <svg width="24" height="24">
+              <use xlink:href="img/sprite.svg#ytube"></use>
+            </svg>
+            <span class="visually-hidden">Ютуб.</span>
+          </a>
+        </li>
+      </ul>
+      <div class="main-footer__container">
+        <p class="main-footer__container-text">Разработано</p>
+        <svg width="28" height="35">
+          <use xlink:href="img/sprite.svg#frame-logo"></use>
+        </svg>
+      </div>
+    </footer>
+  </body>
+</html>

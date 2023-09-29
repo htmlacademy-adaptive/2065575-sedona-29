@@ -4,9 +4,140 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
-
+  <body class="page__body">
+    <header class="main__header">
+      <a class="main-header__link" href="#" aria-label="Логотип ведушший н глвную страницу">
+        <svg class="main-header__logo" width="185" height="96">
+          <use xlink:href="img/sprite.svg#logo"></use>
+        </svg>
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle-button" type="button">
+          <span class="main-nav__toggle"></span>
+          <span class="main-nav__toggle-clon"></span>
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="catalog.html">Фото и видео</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Форма Отзыва</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">HTML ACADEMY</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-container">
+      <h1 class="visually-hidden">Главная страница сайта Седона.</h1>
+      <section class="main-intro__container">
+        <h2 class="visually-hidden">Название сайта Седона.</h2>
+        <picture>
+          <img src="img/png/text-index.svg.png" srcset="img/png/text-index.svg@2x.png 2x" width="282" height="214" alt="Седона.">
+        </picture>
+      </section>
+      <section class="main-content">
+        <h2 class="visually-hidden">Информация городка</h2>
+        <p class="main-content__text">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</p>
+        <p class="main-content__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        <ul class="main-content__list">
+          <li class="main-content__item">
+            <h3 class="main-content__title">НАСТОЯЩИЙ ГОРОДОК</h3>
+            <p class="main-content__text">— №1 —</p>
+            <p class="main-content__text">СЕДОНА НЕ АТТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+          </li>
+          <li class="main-content__item">
+            <picture>
+              <img src="img/jpg/Frame-4.jpg" srcset="img/jpg/Frame-4@2x.png 2x" width="320" height="260" alt="Картинка Отеля.">
+            </picture>
+          </li>
+          <li class="main-content__item">
+            <h3 class="main-content__title">Жилье</h3>
+            <p class="main-content__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          </li>
+          <li class="main-content__item">
+            <h3 class="main-content__title">ЕДА</h3>
+            <p>Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
+          </li>
+          <li class="main-content__item">
+            <h3 class="main-content__title">СУВЕНИРЫ</h3>
+            <p class="main-content__text">Не только китайского, но и местного производства!</p>
+          </li>
+          <li class="main-content__item">
+            <h3 class="main-content__title">ТАМ ЕСТЬ Мост дьявола</h3>
+            <p class="main-content__text">— №2 —</p>
+            <p class="main-content__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          </li>
+          <li class="main-content__item">
+            <picture>
+              <img src="img/jpg/Group-5.png" srcset="img/jpg/Group-5@2x.png 2x" width="320" height="260" alt="Картинка Отеля.">
+            </picture>
+          </li>
+          <li class="main-content__item">
+            <h3 class="main-content__title">НЕБОЛЬШАЯ ПЛОЩАДЬ</h3>
+            <p class="main-content__text">— №3 —</p>
+            <p class="main-content__text">ВСЕ интересные места находятся очень близко</p>
+          </li>
+          <li class="main-content__item">
+            <h3 class="main-content__title">КРАСИВАЯ ДОРОГА</h3>
+            <p class="main-content__text">— №4 —</p>
+            <p class="main-content__text">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем НЕ СКУЧНО!</p>
+          </li>
+          <li class="main-content__item">
+            <h3 class="main-content__title">МАЛО ТУРИСТОВ</h3>
+            <p class="main-content__text">— №5 —</p>
+            <p class="main-content__text">Большинство едет в гранд каньон и толпится там</p>
+          </li>
+        </ul>
+      </section>
+      <section class="main-footer">
+        <h2 class="main-footer__title">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+        <p class="main-footer__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <a class="main-footer__link" href="#">Найти Гостиницу</a>
+        <picture>
+          <img src="img/jpg/map-mobile.jpg.jpg" srcset="img/jpg/map-mobile.jpg@2x.png 2x" width="320" height="260" alt="Картинка Отеля.">
+        </picture>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <p class="main-footer__text">#visitSEDONA</p>
+      <ul class="main-footer__itam">
+        <li class="main-footer__list">
+          <a class="main-footer__link" href="#">
+            <svg width="24" height="24">
+              <use xlink:href="img/sprite.svg#vk-icons"></use>
+            </svg>
+            <span class="visually-hidden">В Контакте.</span>
+          </a>
+        </li>
+        <li class="main-footer__list">
+          <a class="main-footer__link" href="#">
+            <svg width="24" height="24">
+              <use xlink:href="img/sprite.svg#telegram"></use>
+            </svg>
+            <span class="visually-hidden">Телеграмм.</span>
+          </a>
+        </li>
+        <li class="main-footer__list">
+          <a class="main-footer__link" href="#">
+            <svg width="24" height="24">
+              <use xlink:href="img/sprite.svg#ytube"></use>
+            </svg>
+            <span class="visually-hidden">Ютуб.</span>
+          </a>
+        </li>
+      </ul>
+      <div class="main-footer__container">
+        <p class="main-footer__container-text">Разработано</p>
+        <svg width="28" height="35">
+          <use xlink:href="img/sprite.svg#frame-logo"></use>
+        </svg>
+      </div>
+    </footer>
   </body>
 </html>
