@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body class="page__body">
+    <header class="main__header">
+      <a class="main-header__link" href="#" aria-label="Логотип ведушший н глвную страницу">
+        <svg class="main-header__logo" width="185" height="96">
+          <use xlink:href="img/sprite.svg#logo"></use>
+        </svg>
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle-button" type="button">
+          <span class="main-nav__toggle"></span>
+          <span class="main-nav__toggle-clon"></span>
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Фото и видео</a>
+          </li>
+          <li>
+            <a class="main-nav__link" href="form.html">Форма Отзыва</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">HTML ACADEMY</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-container">
+      <h1 class="visually-hidden">Cтраница сайта Седона каталог.</h1>
+      <section class="main-intro__container">
+        <h2 class="visually-hidden">Название сайта Седона.</h2>
+        <picture>
+          <img src="img/png/sedona.png" srcset="img/png/sedona@2x.png 2x" width="229" height="39" alt="Седона.">
+        </picture>
+      </section>
+      <section class="photo">
+        <h2 class="photo__title">Фото и видео</h2>
+        <p class="photo__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        <ul class="photo__list">
+          <li class="photo__item">
+            <picture>
+              <img src="img/jpg/photo-1-mobile.jpg.jpg" srcset="img/jpg/photo-1-mobile.jpg@2x.jpg 2x" width="280" height="280" alt="Фотография.">
+            </picture>
+            <h3 class="photo__title">неродные просторы</h3>
+            <p class="photo__text">Автор фото: Борис</p>
+            <svg width="23" height="21">
+              <use xlink:href="img/sprite.svg#laik"></use>
+            </svg>
+            <p class="photo__text">1350</p>
+          </li>
+          <li class="photo__item">
+            <picture>
+              <img src="img/jpg/photo-2-mobile.jpg.jpg" srcset="img/jpg/photo-2-mobile.jpg@2x.png 2x" width="280" height="280" alt="Фотография.">
+            </picture>
+            <h3 class="photo__title">Местная растительность</h3>
+            <p class="photo__text">Автор фото: Сергей</p>
+            <svg width="23" height="21">
+              <use xlink:href="img/sprite.svg#laik"></use>
+            </svg>
+            <p class="photo__text">143</p>
+          </li>          
+          <li class="photo__item">
+            <picture>
+              <img src="img/jpg/photo-3-mobile.jpg.jpg" srcset="img/jpg/photo-2-mobile.jpg@2x.jpg 2x" width="280" height="280" alt="Фотография.">
+            </picture>
+            <h3 class="photo__title">Дорога на север</h3>
+            <p class="photo__text">Автор фото: Петр</p>
+            <svg width="23" height="21">
+              <use xlink:href="img/sprite.svg#laik"></use>
+            </svg>
+            <p class="photo__text">96</p>
+          </li>
+          <li class="photo__item">
+            <picture>
+              <img src="img/jpg/photo-4-desktop 1.jpg" srcset="img/jpg/photo-4-desktop 1@2x.jpg 2x" width="280" height="280" alt="Фотография.">
+            </picture>
+            <h3 class="photo__title">Мост дьявола</h3>
+            <p class="photo__text">Автор фото: Антон</p>
+            <svg width="23" height="21">
+              <use xlink:href="img/sprite.svg#laik"></use>
+            </svg>
+            <p class="photo__text">254</p>
+          </li>
+        </ul>
+      </section>
+      <section class="video">
+        <h2 class="video__title">Все еще сомневаетесь?</h2>
+        <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        <picture>
+          <img src="img/jpg/video-mobile.jpg.jpg" srcset="img/jpg/video-mobile.jpg@2x.jpg 2x" width="280" height="177" alt="Видео.">
+        </picture>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <p class="main-footer__text">#visitSEDONA</p>
+      <ul class="main-footer__itam">
+        <li class="main-footer__list">
+          <a class="main-footer__link" href="#">
+            <svg width="24" height="24">
+              <use xlink:href="img/sprite.svg#vk-icons"></use>
+            </svg>
+            <span class="visually-hidden">В Контакте.</span>
+          </a>
+        </li>
+        <li class="main-footer__list">
+          <a class="main-footer__link" href="#">
+            <svg width="24" height="24">
+              <use xlink:href="img/sprite.svg#telegram"></use>
+            </svg>
+            <span class="visually-hidden">Телеграмм.</span>
+          </a>
+        </li>
+        <li class="main-footer__list">
+          <a class="main-footer__link" href="#">
+            <svg width="24" height="24">
+              <use xlink:href="img/sprite.svg#ytube"></use>
+            </svg>
+            <span class="visually-hidden">Ютуб.</span>
+          </a>
+        </li>
+      </ul>
+      <div class="main-footer__container">
+        <p class="main-footer__container-text">Разработано</p>
+        <svg width="28" height="35">
+          <use xlink:href="img/sprite.svg#frame-logo"></use>
+        </svg>
+      </div>
+    </footer>
+  </body>
+</html>
