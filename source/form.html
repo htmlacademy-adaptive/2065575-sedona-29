@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="main__header">
+    <header class="main-header">
       <a class="main-header__link" href="#" aria-label="Логотип ведушший н глвную страницу">
         <svg class="main-header__logo" width="185" height="96">
           <use xlink:href="img/sprite.svg#logo"></use>
@@ -17,7 +18,7 @@
           <span class="main-nav__toggle-clon"></span>
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="main-nav__list"> 
+        <ul class="main-nav__list list"> 
           <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">Главная</a>
           </li>
@@ -42,12 +43,15 @@
         </picture>
       </section>
       <section class="form">
+        <picture>
+          <img src="img/png/Group 3.png" srcset="img/png/Group 3@2x.png 2x" width="320" height="57" alt="Декоративный верхний элеммент.">
+        </picture>
         <h2>Оставьте свой отзыв</h2>
         <p>Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
         <form class="form__wrapper-form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="form__wrapper-form-border">
-            <legend class="form-contacts__title">Представьтесь:</legend>
-            <ul class="form__list">
+          <fieldset class="form__wrapper">
+            <legend class="form__title">Представьтесь:</legend>
+            <ul class="form__list list">
               <li>
                 <label class="form__item">
                   <span class="form__text">ИМЯ:*</span>
@@ -87,7 +91,7 @@
           </fieldset>
           <fieldset class="radio">
             <legend class="form-contacts__title">ВАше Общее впечатление:</legend>
-            <ul class="radio__list">
+            <ul class="radio__list list">
               <li>
                 <label class="radio__control">
                   <input class="radio__input visually-hidden" type="radio" name="product-group" value="care-products" checked>
@@ -113,31 +117,31 @@
           </fieldset>
           <fieldset class="checkbox">
             <legend class="checkbox__title">посещенные достопримечательности:</legend>
-            <ul class="checkbox__list">
+            <ul class="checkbox__list list">
               <li class="checkbox__item">
                 <label class="checkbox__control">
-                  <input class="checkbox__input visually-hidden" type="checkbox" name="сахарозаменитель" checked>
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="Devil's-Bridge" checked>
                   <span class="checkbox__mark"></span>
                   <span class="checkbox__text">Мост Дьявола</span>
                 </label>
               </li>
               <li class="checkbox__item">
                 <label class="checkbox__control">
-                  <input class="checkbox__input visually-hidden" type="checkbox" name="питьевая вода" checked>
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="The-Bell-Mountain" checked>
                   <span class="checkbox__mark"></span>
                   <span class="checkbox__text">Гора-Колокол</span>
                 </label>
               </li>
               <li class="checkbox__item">
                 <label class="checkbox__control">
-                  <input class="checkbox__input visually-hidden" type="checkbox" name="молоко" checked>
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="Slide-Park" checked>
                   <span class="checkbox__mark"></span>
                   <span class="checkbox__text">Слайд-парк</span>
                 </label>
               </li>
               <li class="checkbox__item">
                 <label class="checkbox__control">
-                  <input class="checkbox__input visually-hidden" type="checkbox" name="витамины">
+                  <input class="checkbox__input visually-hidden" type="checkbox" name="Red-Rocks">
                   <span class="checkbox__mark"></span>
                   <span class="checkbox__text">Красные скалы</span>
                 </label>
@@ -157,40 +161,39 @@
         </form>
       </section>
     </main>
-    <footer class="main-footer">
-      <p class="main-footer__text">#visitSEDONA</p>
-      <ul class="main-footer__itam">
-        <li class="main-footer__list">
-          <a class="main-footer__link" href="#">
-            <svg width="24" height="24">
-              <use xlink:href="img/sprite.svg#vk-icons"></use>
-            </svg>
-            <span class="visually-hidden">В Контакте.</span>
-          </a>
-        </li>
-        <li class="main-footer__list">
-          <a class="main-footer__link" href="#">
-            <svg width="24" height="24">
-              <use xlink:href="img/sprite.svg#telegram"></use>
-            </svg>
-            <span class="visually-hidden">Телеграмм.</span>
-          </a>
-        </li>
-        <li class="main-footer__list">
-          <a class="main-footer__link" href="#">
-            <svg width="24" height="24">
-              <use xlink:href="img/sprite.svg#ytube"></use>
-            </svg>
-            <span class="visually-hidden">Ютуб.</span>
-          </a>
-        </li>
-      </ul>
-      <div class="main-footer__container">
-        <p class="main-footer__container-text">Разработано</p>
-        <svg width="28" height="35">
-          <use xlink:href="img/sprite.svg#frame-logo"></use>
-        </svg>
-      </div>
-    </footer>
+    <p class="page-footer__text">#visitSEDONA</p>
+    <ul class="page-footer__itam list">
+      <li class="page-footer__list">
+        <a class="page-footer__link" href="#">
+          <svg width="24" height="24">
+            <use xlink:href="img/sprite.svg#vk-icons"></use>
+          </svg>
+          <span class="visually-hidden">В Контакте.</span>
+        </a>
+      </li>
+      <li class="page-footer__list">
+        <a class="page-footer__link" href="#">
+          <svg width="24" height="24">
+            <use xlink:href="img/sprite.svg#telegram"></use>
+          </svg>
+          <span class="visually-hidden">Телеграмм.</span>
+        </a>
+      </li>
+      <li class="page-footer__list">
+        <a class="page-footer__link" href="#">
+          <svg width="24" height="24">
+            <use xlink:href="img/sprite.svg#ytube"></use>
+          </svg>
+          <span class="visually-hidden">Ютуб.</span>
+        </a>
+      </li>
+    </ul>
+    <div class="page-footer__container">
+      <p class="page-footer__container-text">Разработано</p>
+      <svg width="28" height="35">
+        <use xlink:href="img/sprite.svg#frame-logo"></use>
+      </svg>
+    </div>
+  </footer>
   </body>
 </html>
