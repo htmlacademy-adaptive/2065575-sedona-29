@@ -3,9 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
-    <header class="main__header">
+    <header class="main-header">
       <a class="main-header__link" href="#" aria-label="Логотип ведушший н глвную страницу">
         <svg class="main-header__logo" width="185" height="96">
           <use xlink:href="img/sprite.svg#logo"></use>
@@ -17,7 +18,7 @@
           <span class="main-nav__toggle-clon"></span>
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="main-nav__list">
+        <ul class="main-nav__list list">
           <li class="main-nav__item">
             <a class="main-nav__link" href="index.html">Главная</a>
           </li>
@@ -42,9 +43,12 @@
         </picture>
       </section>
       <section class="photo">
+        <picture>
+          <img src="img/png/Group 3.png" srcset="img/png/Group 3@2x.png 2x" width="320" height="57" alt="Декоративный верхний элеммент.">
+        </picture>
         <h2 class="photo__title">Фото и видео</h2>
         <p class="photo__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
-        <ul class="photo__list">
+        <ul class="photo__list list">
           <li class="photo__item">
             <picture>
               <img src="img/jpg/photo-1-mobile.jpg.jpg" srcset="img/jpg/photo-1-mobile.jpg@2x.jpg 2x" width="280" height="280" alt="Фотография.">
@@ -94,45 +98,50 @@
       <section class="video">
         <h2 class="video__title">Все еще сомневаетесь?</h2>
         <p class="video__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+        <a href="#" class="video__container-button">
+          <svg width="48" height="54">
+            <use xlink:href="img/sprite.svg#video-button"></use>
+          </svg>
+        </a>  
         <picture>
           <img src="img/jpg/video-mobile.jpg.jpg" srcset="img/jpg/video-mobile.jpg@2x.jpg 2x" width="280" height="177" alt="Видео.">
         </picture>
+        </div>
       </section>
     </main>
-    <footer class="main-footer">
-      <p class="main-footer__text">#visitSEDONA</p>
-      <ul class="main-footer__itam">
-        <li class="main-footer__list">
-          <a class="main-footer__link" href="#">
-            <svg width="24" height="24">
-              <use xlink:href="img/sprite.svg#vk-icons"></use>
-            </svg>
-            <span class="visually-hidden">В Контакте.</span>
-          </a>
-        </li>
-        <li class="main-footer__list">
-          <a class="main-footer__link" href="#">
-            <svg width="24" height="24">
-              <use xlink:href="img/sprite.svg#telegram"></use>
-            </svg>
-            <span class="visually-hidden">Телеграмм.</span>
-          </a>
-        </li>
-        <li class="main-footer__list">
-          <a class="main-footer__link" href="#">
-            <svg width="24" height="24">
-              <use xlink:href="img/sprite.svg#ytube"></use>
-            </svg>
-            <span class="visually-hidden">Ютуб.</span>
-          </a>
-        </li>
-      </ul>
-      <div class="main-footer__container">
-        <p class="main-footer__container-text">Разработано</p>
-        <svg width="28" height="35">
-          <use xlink:href="img/sprite.svg#frame-logo"></use>
-        </svg>
-      </div>
-    </footer>
+    <p class="page-footer__text">#visitSEDONA</p>
+    <ul class="page-footer__itam list">
+      <li class="page-footer__list">
+        <a class="page-footer__link" href="#">
+          <svg width="24" height="24">
+            <use xlink:href="img/sprite.svg#vk-icons"></use>
+          </svg>
+          <span class="visually-hidden">В Контакте.</span>
+        </a>
+      </li>
+      <li class="page-footer__list">
+        <a class="page-footer__link" href="#">
+          <svg width="24" height="24">
+            <use xlink:href="img/sprite.svg#telegram"></use>
+          </svg>
+          <span class="visually-hidden">Телеграмм.</span>
+        </a>
+      </li>
+      <li class="page-footer__list">
+        <a class="page-footer__link" href="#">
+          <svg width="24" height="24">
+            <use xlink:href="img/sprite.svg#ytube"></use>
+          </svg>
+          <span class="visually-hidden">Ютуб.</span>
+        </a>
+      </li>
+    </ul>
+    <div class="page-footer__container">
+      <p class="page-footer__container-text">Разработано</p>
+      <svg width="28" height="35">
+        <use xlink:href="img/sprite.svg#frame-logo"></use>
+      </svg>
+    </div>
+  </footer>
   </body>
 </html>
