@@ -1,29 +1,27 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+  <head class="page">
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="page__body">
+  <body>
     <header class="main-header">
-      <a class="main-header__link" href="#" aria-label="Логотип ведушший н глвную страницу">
-        <svg class="main-header__logo" width="185" height="96">
-          <use xlink:href="img/sprite.svg#logo"></use>
-        </svg>
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle-button" type="button">
-          <span class="main-nav__toggle"></span>
-          <span class="main-nav__toggle-clon"></span>
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+      <nav class="main-nav main-nav--closed .main-nav--nojs">
         <ul class="main-nav__list list">
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--active">
             <a class="main-nav__link" href="#">Главная</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="catalog.html">Фото и видео</a>
+          </li>
+          <li class="main-nav__item-logo">
+            <a class="main-nav__link-logo" href="#" aria-label="Логотип ведушший н глвную страницу">
+              <svg class="main-nav__logo" width="185" height="96">
+                <use xlink:href="img/sprite.svg#logo"></use>
+              </svg>
+            </a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="form.html">Форма Отзыва</a>
@@ -32,6 +30,9 @@
             <a class="main-nav__link" href="#">HTML ACADEMY</a>
           </li>
         </ul>
+        <button class="main-nav__toggle-button" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
       </nav>
     </header>
     <main class="main-container">
@@ -45,14 +46,20 @@
       <section class="main-content">
         <h2 class="visually-hidden">Информация городка</h2>
         <div class="main-content__container">
-          <picture>
-            <img src="img/png/Group 3.png" srcset="img/png/Group 3@2x.png 2x" width="320" height="57" alt="Декоративный верхний элеммент.">
-          </picture>
+          <div class="main-content__decor-top">
+            <picture>
+              <source media="(min-width: 1279px)" srcset="img/png/intro-triangle.svg.png 1x, img/png/intro-triangle.svg@2x.png 2x">
+              <source media="(min-width: 767px)" srcset="img/png/intro-triangle-1.svg.png 1x, img/png/intro-triangle-1.svg@2x.png 2x">
+              <img src="img/png/group-3.png" srcset="img/png/group-3@2x.png 2x" width="320" height="57" alt="Декоративный верхний элеммент.">
+            </picture>
+          </div>
           <p class="main-content__container-text">СЕДОНА — небольшой городок в АРИЗОНЕ, заслуживающий большего!</p>
           <p class="main-content__container-text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
-          <picture>
-            <img src="img/png/Group 4.png" srcset="img/png/Group 4@2x.png 2x" width="320" height="37" alt="Декоративный нижний элеммент.">
-          </picture>
+          <div class="main-content__decor-bottom">
+            <picture>
+              <img src="img/png/group-4.png" srcset="img/png/group-4@2x.png 2x" width="320" height="37" alt="Декоративный нижний элеммент.">
+            </picture>
+          </div>
         </div>
         <ul class="main-content__list list">
           <li class="main-content__item main-background-color">
