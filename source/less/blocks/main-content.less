@@ -2,13 +2,270 @@
   background-color: #ffffff;
 }
 
+.main-content__container-group {
+  padding: 32px 12px;
+
+  @media (min-width: @tablet-width) {
+    padding: 32px 30px;
+  }
+}
+
+.main-content__color {
+  color: #FFFFFF;
+  background-color: #81B3D2;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    grid-column: 1/4;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-content__revers {
+    flex-direction: row-reverse;
+    grid-column: 1/4;
+  }
+}
+
+.main-content__container-title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  font-family: "PT Sans", sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+  }
+}
+
+.main-content__container-text {
+  margin: 0;
+  margin-top: 32px;
+  text-transform: uppercase;
+}
+
+.main-content__decor {
+  position: absolute;
+  width: 100%;
+  min-width: 320px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.main-content__decor img {
+  position: relative;
+  width: 100%;
+  padding: 0;
+  top: -12px;
+}
+
+@media (min-width: @tablet-width) {
+  .main-content__list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.main-content__item-container {
+  padding: 37px 12px;
+
+  @media (min-width: @tablet-width) {
+    width: 256px;
+    padding: 0;
+    padding-top: 52px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 400px;
+  }
+}
+
+.main-content__itam-title {
+  margin: 0;
+  padding-top: 33px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  font-family: "PT Sans", sans-serif;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    padding: 0 25px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 95px;
+  }
+}
+
+.main-content__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  font-family: "PT Sans", sans-serif;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+    padding: 0 35px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 114px;
+  }
+}
+
+.main-content__text-number {
+  margin: 0;
+  margin-top: 11px;
+  text-transform: uppercase;
+}
+
+.main-content__text {
+  margin: 0;
+  margin-top: 17px;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 20px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 18px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-content__text-container {
+    padding: 0 70px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-content__container-images {
+    width: 512px;
+
+    @media (min-width: 775px) {
+      width: calc(100% - 256px);
+
+      @media (min-width: @desktop-width) {
+        width: 800px;
+      }
+    }
+  }
+}
+
+.main-content__container-images img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+  object-position: bottom;
+}
+
 .main-content__list-frame {
   padding: 0;
+  padding-top: 23px;
+  padding-bottom: 46px;
   list-style: none;
   color: #333333;
   background-color: #ffffff;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.main-content__container-frame {
+  text-align: start;
+
+  @media (min-width: @tablet-width) {
+    text-align: center;
+  }
+}
+
+.main-content__item-frame {
+  padding-left: 47px;
+  padding-bottom: 25px;
+
+  @media (min-width: @tablet-width) {
+    padding: 0 25px;
+    padding-top: 135px;
+    padding-bottom: 20px;
+  }
+}
+
+.main-content__item-frame:last-child {
+  padding-bottom: 0;
+}
+
+.main-content__title-frame {
+  margin: 0;
+  margin-top: 8px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  font-family: "PT Sans", sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+
+  @media (min-width: @tablet-width) {
+    font-size: 21px;
+  }
+}
+
+.main-content__text-frame {
+  margin: 0;
+  margin-top: 16px;
+  text-transform: uppercase;
+
+  @media (min-width: @desktop-width) {
+    padding: 0 16px;
+  }
+}
+
+.main-content__text-meal {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.main-content__text-transfer {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    display: block;
+  }
 }
 
 .main-content__item {
+  padding: 0 18px;
   background-color: #EEEEEE;
+}
+
+.main-content__item-text {
+  padding: 24px 0;
+  border-top: solid 1px #D6D6D6;
+
+  @media (min-width: @desktop-width) {
+    padding: 54px 0;
+  }
+}
+
+.main-content__item:last-child {
+  padding-bottom: 4px;
 }

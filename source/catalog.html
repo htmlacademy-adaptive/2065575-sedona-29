@@ -1,97 +1,108 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+  <head class="page">
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="page__body">
+  <body>
     <header class="main-header">
-      <a class="main-header__link" href="#" aria-label="Логотип ведушший н глвную страницу">
-        <svg class="main-header__logo" width="185" height="96">
-          <use xlink:href="img/sprite.svg#logo"></use>
-        </svg>
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle-button" type="button">
-          <span class="main-nav__toggle"></span>
-          <span class="main-nav__toggle-clon"></span>
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+      <nav class="main-nav main-nav--closed .main-nav--nojs">
         <ul class="main-nav__list list">
-          <li class="main-nav__item">
+          <li class="main-nav__item main-nav__item--active">
             <a class="main-nav__link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Фото и видео</a>
+            <a class="main-nav__link main-nav__current" href="#">Фото и видео</a>
           </li>
-          <li>
+          <li class="main-nav__item-logo">
+            <a class="main-nav__link-logo" href="index.html" aria-label="Логотип ведушший н глвную страницу">
+              <svg class="main-nav__logo" width="185" height="96">
+                <use xlink:href="img/sprite.svg#logo"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="main-nav__item">
             <a class="main-nav__link" href="form.html">Форма Отзыва</a>
           </li>
           <li class="main-nav__item">
             <a class="main-nav__link" href="#">HTML ACADEMY</a>
           </li>
         </ul>
+        <button class="main-nav__toggle-button" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
       </nav>
     </header>
     <main class="main-container">
       <h1 class="visually-hidden">Cтраница сайта Седона каталог.</h1>
-      <section class="main-intro__container">
+      <section class="main-intro__catalog">
         <h2 class="visually-hidden">Название сайта Седона.</h2>
-        <picture>
-          <img src="img/png/sedona.png" srcset="img/png/sedona@2x.png 2x" width="229" height="39" alt="Седона.">
-        </picture>
+        <div class="main-intro__catalog-imeges">
+          <picture>
+            <img src="img/png/sedona.png" srcset="img/png/sedona@2x.png 2x" width="229" height="39" alt="Седона.">
+          </picture>
+        </div>
+        <div class="main-intro__decor">
+          <img src="img/svg/intro-triangle-1.svg.svg" width="320" height="57" alt="Декоративный элеммент.">
+        </div>
       </section>
       <section class="photo">
-        <picture>
-          <img src="img/png/Group 3.png" srcset="img/png/Group 3@2x.png 2x" width="320" height="57" alt="Декоративный верхний элеммент.">
-        </picture>
         <h2 class="photo__title">Фото и видео</h2>
         <p class="photo__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
         <ul class="photo__list list">
           <li class="photo__item">
-            <picture>
-              <img src="img/jpg/photo-1-mobile.jpg.jpg" srcset="img/jpg/photo-1-mobile.jpg@2x.jpg 2x" width="280" height="280" alt="Фотография.">
-            </picture>
-            <h3 class="photo__title">неродные просторы</h3>
-            <p class="photo__text">Автор фото: Борис</p>
-            <svg width="23" height="21">
-              <use xlink:href="img/sprite.svg#laik"></use>
-            </svg>
-            <p class="photo__text">1350</p>
+            <div class="photo__item-container">
+              <picture>
+                <img src="img/jpg/photo-1-mobile.jpg.jpg" srcset="img/jpg/photo-1-mobile.jpg@2x.jpg 2x" width="280" height="280" alt="Фотография.">
+              </picture>
+              <h3 class="photo__title">неродные просторы</h3>
+              <p class="photo__text">Автор фото: Борис</p>
+              <svg width="23" height="21">
+                <use xlink:href="img/sprite.svg#laik"></use>
+              </svg>
+              <p class="photo__text">1350</p>
+            </div>
           </li>
           <li class="photo__item">
-            <picture>
-              <img src="img/jpg/photo-2-mobile.jpg.jpg" srcset="img/jpg/photo-2-mobile.jpg@2x.png 2x" width="280" height="280" alt="Фотография.">
-            </picture>
-            <h3 class="photo__title">Местная растительность</h3>
-            <p class="photo__text">Автор фото: Сергей</p>
-            <svg width="23" height="21">
-              <use xlink:href="img/sprite.svg#laik"></use>
-            </svg>
-            <p class="photo__text">143</p>
+            <div class="photo__item-container">
+              <picture>
+                <img src="img/jpg/photo-2-mobile.jpg.jpg" srcset="img/jpg/photo-2-mobile.jpg@2x.png 2x" width="280" height="280" alt="Фотография.">
+              </picture>
+              <h3 class="photo__title">Местная растительность</h3>
+              <p class="photo__text">Автор фото: Сергей</p>
+              <svg width="23" height="21">
+                <use xlink:href="img/sprite.svg#laik"></use>
+              </svg>
+              <p class="photo__text">143</p>
+            </div>
           </li>          
           <li class="photo__item">
-            <picture>
-              <img src="img/jpg/photo-3-mobile.jpg.jpg" srcset="img/jpg/photo-2-mobile.jpg@2x.jpg 2x" width="280" height="280" alt="Фотография.">
-            </picture>
-            <h3 class="photo__title">Дорога на север</h3>
-            <p class="photo__text">Автор фото: Петр</p>
-            <svg width="23" height="21">
-              <use xlink:href="img/sprite.svg#laik"></use>
-            </svg>
-            <p class="photo__text">96</p>
+            <div class="photo__item-container">
+              <picture>
+                <img src="img/jpg/photo-3-mobile.jpg.jpg" srcset="img/jpg/photo-2-mobile.jpg@2x.jpg 2x" width="280" height="280" alt="Фотография.">
+              </picture>
+              <h3 class="photo__title">Дорога на север</h3>
+              <p class="photo__text">Автор фото: Петр</p>
+              <svg width="23" height="21">
+                <use xlink:href="img/sprite.svg#laik"></use>
+              </svg>
+              <p class="photo__text">96</p>
+            </div>
           </li>
           <li class="photo__item">
-            <picture>
-              <img src="img/jpg/photo-4-desktop 1.jpg" srcset="img/jpg/photo-4-desktop 1@2x.jpg 2x" width="280" height="280" alt="Фотография.">
-            </picture>
-            <h3 class="photo__title">Мост дьявола</h3>
-            <p class="photo__text">Автор фото: Антон</p>
-            <svg width="23" height="21">
-              <use xlink:href="img/sprite.svg#laik"></use>
-            </svg>
-            <p class="photo__text">254</p>
+            <div class="photo__item-container">
+              <picture>
+                <img src="img/jpg/photo-4-desktop 1.jpg" srcset="img/jpg/photo-4-desktop 1@2x.jpg 2x" width="280" height="280" alt="Фотография.">
+              </picture>
+              <h3 class="photo__title">Мост дьявола</h3>
+              <p class="photo__text">Автор фото: Антон</p>
+              <svg width="23" height="21">
+                <use xlink:href="img/sprite.svg#laik"></use>
+              </svg>
+              <p class="photo__text">254</p>
+            </div>
           </li>
         </ul>
       </section>

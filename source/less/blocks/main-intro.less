@@ -1,10 +1,46 @@
 .main-intro {
   background-color: #4c79a3;
-  background-image: url("../img/jpg/Frame 7.jpg");
+  background-image: url("../img/jpg/frame-7.jpg");
   background-repeat: no-repeat;
+  background-size: 100% 100%; 
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/jpg/frame-7@2x.jpg");
+  }
+
+  
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/jpg/Intro.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/jpg/Intro@2x.jpg");
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/jpg/intro-1.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/jpg/intro-1@2x.jpg");
+    }
+  }
 }
 
 .main-intro img {
   padding-top: 90px;
   padding-bottom: 84px;
+}
+
+.main-intro__decor {
+  position: absolute;
+  width: 100%;
+  min-width: 320px;
+  max-width: 1200px;
+}
+
+.main-intro__decor img {
+  position: relative;
+  width: 100%;
+  padding: 0;
+  bottom: 56px;
 }
