@@ -1,6 +1,10 @@
 .main-header {
   min-height: 56px;
   background-color: #ffffff;
+
+  @media (min-width: @desktop-width) {
+    padding: 0 40px;
+  }
 }
 
 .main-header__link {
@@ -40,6 +44,7 @@
 
 .main-nav__list {
   position: absolute;
+  min-width: 320px;
   max-width: 1280px;
   width: 100%;
   top: 0px;
@@ -49,6 +54,11 @@
     height: 53px;
     background-color: transparent;
     justify-content: space-evenly;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 0 40px;width: 1200px;
+    justify-content: space-between;
   }
 }
 
